@@ -1,0 +1,56 @@
+<!-- Student: Lwandle Soga | ST: 10510913 | File: enquiry.html | Module: WEDE5020 Part 2 | Date: 18 Sept 2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volunteer or donate to the Tshwane Community Youth Center – fill in our enquiry form.">
+    <title>Tshwane Community Youth Center – Enquiry</title>
+     <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+
+  
+
+    <header>
+        <h1>Tshwane Community Youth Center</h1>
+    </header>
+
+    <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  <a href="#main" class="skip-link">Skip to main content</a>
+    <main id="main">
+        <h2>Volunteer &amp; Enquiry Form</h2>
+        <p style="text-align:center;">Want to volunteer or donate? Fill in your details below.</p>
+
+       <form id="enquiryForm" action="mailto:info@tcyouthcenter.org.za" method="post"></form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+
+            <label for="cell">Cell Number:</label>
+            <input type="tel" id="cell" name="cell" placeholder="e.g. 0821234567"
+                   pattern="0[0-9]{9}" inputmode="numeric" autocomplete="tel" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="message">Message / How would you like to help?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Send Enquiry</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tshwane Community Youth Center | <a href="contact.html">Contact us</a></p>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>
